@@ -1,0 +1,22 @@
+{% extends "cms/base.html" %}
+{% block title %}{{ error }}{% endblock %}
+{% load i18n %}
+{% block contents %}
+    <!-- #section:pages/error -->
+    <div class="error-container">
+        <div class="well">
+            <h1 class="grey lighter smaller">
+                <span class="blue bigger-125">
+                    <i class="ace-icon fa fa-exclamation-circle"></i>
+                    {{ error }}
+                </span>
+            </h1>
+            <div class="center">
+                <a href="/" class="btn btn-primary">
+                    <i class="ace-icon fa fa-home"></i>
+                    {% trans "Main Page" %}
+                </a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

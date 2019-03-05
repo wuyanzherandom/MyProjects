@@ -1,0 +1,10 @@
+{% if meta %}
+    <meta {% if meta.name %}name="{{ meta.name }}"{% endif %}
+          {% if meta.property %}property="{{ meta.property }}"{% endif %}
+          {% if meta.httpequiv %}http-equiv="{{ meta.httpequiv }}" {% endif %}
+          content="{{ meta.value }}"/>
+{% endif %}
+
+<!--
+info https://gist.github.com/lancejpollard/1978404
+-->

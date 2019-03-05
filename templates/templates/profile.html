@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Personal Profile" %}{% endblock %}
+{% block contents%}<table class="masterFontsize" cellpadding="0" cellspacing="0" border="0" style="width: 600px;">
+            <tbody>
+            <tr>
+                <td style="vertical-align:top;width:50%;">
+                    <table class="masterFontsize" cellpadding="5" cellspacing="0" border="0">
+                        <tbody>
+                        <tr>
+                            <td colspan="3" nowrap="nowrap" align="left">
+                                <h4 style="text-decoration: underline;">{% trans "Basic Information" %}</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td nowrap="nowrap"
+                                style="font-weight: bold; line-height: 2em;">{% trans "Username" %}</td>
+                            <td nowrap="nowrap" style="width: 20px; text-align: center;">:</td>
+                            <td nowrap="nowrap" width="100%">{{ account.username }}</td>
+                        </tr>
+                        <tr>
+                            <td nowrap="nowrap"
+                                style="font-weight: bold; line-height: 2em;">{% trans "Email Address" %}</td>
+                            <td nowrap="nowrap" style="width: 20px; text-align: center;">:</td>
+                            <td nowrap="nowrap" width="100%">{{ account.email_address }}</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">&nbsp;</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+
+                <td style="width:5%;">&nbsp;</td>
+            </tr>
+            </tbody>
+        </table>
+{% endblock %}

@@ -1,0 +1,1 @@
+call C:\Users\%username%\.virtualenv\AllInOneLibrary\Scripts\activate.bat

@@ -1,0 +1,1 @@
+for %%i in (*.*) do if not "%%i"=="__init__.py" if not "%%i"=="__init__.pyc" if not "%%i"=="del_except.bat" del /q "%%i"

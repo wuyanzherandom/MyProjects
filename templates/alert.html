@@ -1,0 +1,17 @@
+{% if trigger_msg == 'success' %}
+    <div class="alert alert-success">
+        {{ msg }}
+    </div>
+{% elif trigger_msg == 'info' %}
+    <div class="alert alert-info">
+        {{ msg }}
+    </div>
+{% elif trigger_msg == 'warning' %}
+    <div class="alert alert-warning">
+        {{ msg }}
+    </div>
+{% elif trigger_msg == 'danger' %}
+    <div class="alert alert-danger">
+        {{ msg }}
+    </div>
+{% endif %}
